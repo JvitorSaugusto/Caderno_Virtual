@@ -16,6 +16,16 @@ body {
     position: relative;
     right: -24px;
     width: 364px;
-    height: 700px;
+    height: 750px;
     border: 1px solid;
+}
+
+footer {
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.meu-botao-2{
+    width: 200px;
+    height: 100px;
 }
