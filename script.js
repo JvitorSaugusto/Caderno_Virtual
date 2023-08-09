@@ -37,6 +37,25 @@ tela.onmousemove = (evento) => {
 
 //tela esta na frente do comando pois só queremos q esses eventos  ocorram nela e em mais nada. Evento client.x mapeia a posição em x, assim atualizando o pincel.
 
+// Eventos de toque
+    tela.addEventListener('touchstart', (evento) => {
+        pincel.ativo = true;
+        pincel.pos.x = evento.touches[0].clientX;
+        pincel.pos.y = evento.touches[0].clientY;
+        evento.preventDefault(); // Impede o comportamento padrão do toque (scrolling, etc.)
+    });
+
+    tela.addEventListener('touchend', () => {
+        pincel.ativo = false;
+    });
+
+    tela.addEventListener('touchmove', (evento) => {
+        pincel.pos.x = evento.touches[0].clientX;
+        pincel.pos.y = evento.touches[0].clientY;
+        pincel.movendo = true;
+        evento.preventDefault();
+    });
+
 const ciclo = () =>{
     if (pincel.ativo && pincel.movendo && pincel.posAnterior) {
         desenharLinha({pos:pincel.pos, posAnterior: pincel.posAnterior})
