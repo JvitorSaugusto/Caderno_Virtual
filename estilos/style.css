@@ -1,0 +1,91 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/Notebook\ Lines.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.img-1 {
+    display: flex;
+    
+}
+
+.eye {
+    width: 126px;
+    height: 90px;
+    margin-left: auto;
+    transform: rotate(24);
+    flex-shrink: 0;
+}
+
+main{
+margin-left: 10px;
+}
+
+.note {
+width: 288.343px;
+height: 245.07px;
+transform: rotate(357deg);
+padding: 20px 16px;
+gap: 166px;
+position: relative;
+z-index: -1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.meu-botao-1 {
+text-align: center;
+font-family: 'Lilita One', cursive;
+font-style: normal;
+font-size: 50px;
+color: #FFF375;
+-webkit-text-stroke: 2px #000;
+transform: rotate(342deg);
+position: absolute;
+background: none;
+border: none;
+bottom: 65%;
+right: 39%;
+}
+
+p {
+color: #000;
+text-align: center;
+font-family: Sticky Notes;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+transform: rotate(342deg);
+position: relative;
+top: 250px;
+right: 40px;
+}
+
+
+.plane {
+margin-left: 249px;
+width: 110px;
+height: 71px;
+flex-shrink: 0;
+}
+
+.idea {
+width: 76px;
+height: 70px;
+transform: rotate(350deg);
+margin-left: 16px;
+flex-shrink: 0;
+}
