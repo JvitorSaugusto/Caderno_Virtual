@@ -43,6 +43,7 @@ tela.onmousemove = (evento) => {
         pincel.pos.x = evento.touches[0].clientX;
         pincel.pos.y = evento.touches[0].clientY;
         evento.preventDefault(); // Impede o comportamento padrão do toque (scrolling, etc.)
+        e.preventDefault()
     });
 
     tela.addEventListener('touchend', () => {
@@ -54,6 +55,7 @@ tela.onmousemove = (evento) => {
         pincel.pos.y = evento.touches[0].clientY;
         pincel.movendo = true;
         evento.preventDefault();
+        e.preventDefault()
     });
 
 const ciclo = () =>{
