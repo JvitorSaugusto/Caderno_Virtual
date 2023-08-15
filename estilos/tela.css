@@ -19,14 +19,23 @@ body {
     border: 1px solid;
 }
 
-.meu-botao-2{
-    width: 200px;
-    height: 100px;
+.meu-botao-2 {
+    width: 50px; /* Defina a largura desejada */
+    height: 50px; /* Defina a altura desejada */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o conteúdo do botão (no caso, a imagem). Isso garante que a imagem esteja alinhada no centro do botão em relação ao eixo horizontal.*/
 }
+
+.meu-botao-2 img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse os limites do botão */
+    max-height: 100%; /* Garante que a imagem não ultrapasse os limites do botão */
+}
+
 
 footer {
     position: fixed;
     display: flex;
+    gap: 20px;
     bottom: 0;
     width: 100%;
     background-color: #739ee2;
@@ -35,3 +44,5 @@ footer {
     margin-left: 25.1px;
     height: 50px; 
 }
+
+/* o primeiro uso do display: flex (na classe .meu-botao-2) garante que as imagens estejam centralizadas dentro dos botões, e o segundo uso (na classe footer) centraliza os botões dentro do footer horizontalmente e verticalmente.*/
