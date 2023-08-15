@@ -11,8 +11,16 @@ const pincel = {
 const tela = document.querySelector('#tela')
 const contexto = tela.getContext('2d') /*Quando desenhamos pelo JS não desnehamos na tela e sim no contexto, aqui estamos criando este contexto*/
 
-tela.width =364; /*Garantindo que a tela saiba as medidas do JS */
-tela.height =700;
+const resizeCanvas = () => {
+    tela.width = window.innerWidth;
+    tela.height = window.innerHeight;
+
+    // Redesenhe o conteúdo do canvas aqui, se necessário
+    // ... (seu código de desenho e animação)
+};
+
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas(); // Redimensionar o canvas inicialmente
 
 //contexto.lineWidth = ;  ALTERA TAMANHO
 //contexto.strokeStyle = ;  ALTERA COR
@@ -43,7 +51,6 @@ tela.onmousemove = (evento) => {
         pincel.pos.x = evento.touches[0].clientX;
         pincel.pos.y = evento.touches[0].clientY;
         evento.preventDefault(); // Impede o comportamento padrão do toque (scrolling, etc.)
-        e.preventDefault()
     });
 
     tela.addEventListener('touchend', () => {
@@ -55,7 +62,6 @@ tela.onmousemove = (evento) => {
         pincel.pos.y = evento.touches[0].clientY;
         pincel.movendo = true;
         evento.preventDefault();
-        e.preventDefault()
     });
 
 const ciclo = () =>{

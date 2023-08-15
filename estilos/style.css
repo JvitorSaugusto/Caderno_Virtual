@@ -12,6 +12,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+
 }
 
 .img-1 {
@@ -89,3 +90,4 @@ transform: rotate(350deg);
 margin-left: 16px;
 flex-shrink: 0;
 }
+

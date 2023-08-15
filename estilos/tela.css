@@ -10,22 +10,27 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    padding-bottom: 80px; /* Altura do footer */
 }
 
 #tela {
     position: relative;
     right: -24px;
-    width: 364px;
-    height: 750px;
     border: 1px solid;
-}
-
-footer {
-    padding-left: 50px;
-    padding-top: 10px;
 }
 
 .meu-botao-2{
     width: 200px;
     height: 100px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #739ee2;
+    padding: 10px;
+    padding-top: 26.4px;
+    margin-left: 25.1px;
+    height: 50px; 
 }
