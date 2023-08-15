@@ -26,6 +26,7 @@ body {
 
 footer {
     position: fixed;
+    display: flex;
     bottom: 0;
     width: 100%;
     background-color: #739ee2;
