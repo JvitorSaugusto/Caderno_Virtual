@@ -33,7 +33,13 @@ body {
 }
 
 .meu-botao-3 {
-    background-color: transparent;
+    width: 50px; /* Defina a largura desejada */
+    height: 50px; /* Defina a altura desejada */
+    background-image: url("../img/trash-alt.png");
+    background-size: cover; /* A imagem cobrirá todo o espaço do botão */
+    background-position: center; /* A imagem será centralizada no botão */
+    border: 1px solid;
+    border-radius: 10px;
 }
 
 .meu-botao-3 img {
