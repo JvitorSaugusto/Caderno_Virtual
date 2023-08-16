@@ -25,6 +25,8 @@ resizeCanvas(); // Redimensionar o canvas inicialmente
 //contexto.lineWidth = ;  ALTERA TAMANHO
 //contexto.strokeStyle = ;  ALTERA COR
 
+const botaoApagar = document.querySelector('#apagar');
+
 const desenharLinha = (linha)=> {
 
 contexto.beginPath(); /*Inicio do desenho/inico do seu caminho*/
@@ -44,6 +46,11 @@ tela.onmousemove = (evento) => {
 }
 
 //tela esta na frente do comando pois só queremos q esses eventos  ocorram nela e em mais nada. Evento client.x mapeia a posição em x, assim atualizando o pincel.
+
+botaoApagar.addEventListener('click', () => {
+    contexto.clearRect(0, 0, tela.width, tela.height);
+});
+
 
 // Eventos de toque
     tela.addEventListener('touchstart', (evento) => {
@@ -74,6 +81,7 @@ const ciclo = () =>{
     setTimeout(ciclo, 10);
 
 } 
+
 //verificando se o pincel esta ativo, se movendo e a posição anterior do mesmo, depois chamando o desenharLinha e passar um obj com pos e posAnterior usando os pinceis, e sempre q parar de mover o pincel, o pincel.movendo vai para false. Toda vez após esse ciclo meu pincel.posAnterior vai receber x e y da posição dos pinceis
 
 ciclo ()

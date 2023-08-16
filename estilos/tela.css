@@ -24,6 +24,7 @@ body {
     height: 50px; /* Defina a altura desejada */
     display: flex;
     justify-content: center; /* Centraliza horizontalmente o conteúdo do botão (no caso, a imagem). Isso garante que a imagem esteja alinhada no centro do botão em relação ao eixo horizontal.*/
+    background-color: transparent;
 }
 
 .meu-botao-2 img {
@@ -31,6 +32,15 @@ body {
     max-height: 100%; /* Garante que a imagem não ultrapasse os limites do botão */
 }
 
+.meu-botao-3 {
+    background-color: transparent;
+}
+
+.meu-botao-3 img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse os limites do botão */
+    max-height: 100%; /* Garante que a imagem não ultrapasse os limites do botão */
+    
+}
 
 footer {
     position: fixed;
