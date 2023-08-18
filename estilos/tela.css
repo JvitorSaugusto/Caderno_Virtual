@@ -16,7 +16,6 @@ body {
 #tela {
     position: relative;
     right: -24px;
-    border: 1px solid;
 }
 
 .meu-botao-2 {
@@ -54,10 +53,10 @@ footer {
     gap: 20px;
     bottom: 0;
     width: 100%;
-    background-color: #739ee2;
+    background: linear-gradient(to top, rgba(6, 139, 247, 0.89), rgba(255, 255, 255, 0.39) 80%);
     padding: 10px;
     padding-top: 26.4px;
-    margin-left: 25.1px;
+    margin-left: 25.5px;
     height: 50px; 
 }
 
